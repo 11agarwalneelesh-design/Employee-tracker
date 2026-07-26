@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import Image from 'next/image'; // 👈 Image component import kiya
+import Image from 'next/image';
 
 export default function AdminLogin({ setAuthStatus }) {
     const [email, setEmail] = useState('');
@@ -13,8 +13,8 @@ export default function AdminLogin({ setAuthStatus }) {
         setError('');
 
         try {
-            // Backend API par request bhejein
-            const response = await fetch('http://localhost:4000/api/auth/login', {
+            // 👇 YAHAN CHANGE KIYA HAI: Localhost ki jagah Live Render URL
+            const response = await fetch('https://tracker-api-om84.onrender.com/api/auth/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password })
@@ -23,11 +23,8 @@ export default function AdminLogin({ setAuthStatus }) {
             const data = await response.json();
 
             if (response.ok) {
-                // Login successful hone par role aur email browser mein save karein
                 localStorage.setItem('userRole', data.role);
                 localStorage.setItem('userEmail', data.email);
-                
-                // App ke state ko update karein taaki dashboard khul jaye
                 setAuthStatus(true);
             } else {
                 setError(data.error || 'Invalid credentials');
@@ -39,12 +36,9 @@ export default function AdminLogin({ setAuthStatus }) {
 
     return (
         <div style={styles.container}>
-            {/* 👈 Background image ko clear dikhane ke liye dark overlay */}
             <div style={styles.overlay}></div> 
 
             <div style={styles.card}>
-                
-                {/* 👈 Middle Logo Section */}
                 <div style={styles.logoContainer}>
                     <Image 
                         src="/logo.png" 
@@ -85,7 +79,6 @@ export default function AdminLogin({ setAuthStatus }) {
     );
 }
 
-// 👈 Styles mein background image aur logo ka design add kiya gaya hai
 const styles = {
     container: { 
         position: 'relative',
@@ -94,14 +87,14 @@ const styles = {
         justifyContent: 'center', 
         alignItems: 'center', 
         backgroundColor: '#0b0f19',
-        backgroundImage: "url('/bg-image.jpg')", // 👈 Background Image ka path
+        backgroundImage: "url('/bg-image.jpg')", 
         backgroundSize: 'cover',
         backgroundPosition: 'center',
     },
     overlay: {
         position: 'absolute',
         top: 0, left: 0, right: 0, bottom: 0,
-        backgroundColor: 'rgba(11, 15, 25, 0.75)', // 👈 Dark transparent layer
+        backgroundColor: 'rgba(11, 15, 25, 0.75)', 
         zIndex: 0
     },
     card: { 
@@ -114,7 +107,7 @@ const styles = {
         width: '380px', 
         textAlign: 'center', 
         border: '1px solid #1f2937',
-        boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)' // 👈 Box ke piche shadow
+        boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)' 
     },
     logoContainer: {
         backgroundColor: 'white',
