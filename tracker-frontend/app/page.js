@@ -4,7 +4,8 @@ import { io } from 'socket.io-client';
 import Image from 'next/image'; 
 import AdminLogin from './AdminLogin'; 
 
-const BACKEND_HOST = 'http://localhost:4000';
+// 👇 YAHAN CHANGE KIYA HAI: Localhost ki jagah Live Render URL daal diya hai
+const BACKEND_HOST = 'https://tracker-api-om84.onrender.com';
 
 export default function EmployeeAnalyticsPortal() {
   // --------------------------------------------------------
@@ -212,7 +213,7 @@ export default function EmployeeAnalyticsPortal() {
         <div className="flex items-center gap-4">
           <div className="bg-white p-1.5 rounded-lg flex items-center justify-center shadow-sm">
             <Image 
-              src="/logo.png" /* 👈 YAHAN PATH FIX KIYA HAI */
+              src="/logo.png" 
               alt="Ethara.AI Logo" 
               width={100} 
               height={35} 
