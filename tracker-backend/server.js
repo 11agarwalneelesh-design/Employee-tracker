@@ -45,7 +45,7 @@ const logger = winston.createLogger({
 
 // 💾 2. DATABASE CONNECTION
 // 👇 YAHAN CHANGE KIYA HAI: process.env.MONGO_URI add kiya gaya hai
-const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://11agarwalneelesh_db_user:Neelesh_2026@cluster0.hvev2rd.mongodb.net/?appName=Cluster0';
+const MONGO_URI = process.env.MONGO_URI || "mongodb+srv://11agarwalneelesh_db_user:Neelesh_2026@cluster0.hvev2rd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 mongoose.connect(MONGO_URI)
     .then(() => console.log('💾 Connected to MongoDB Successfully via Mongoose'))
     .catch(err => console.error('❌ MongoDB Connection Error:', err));
