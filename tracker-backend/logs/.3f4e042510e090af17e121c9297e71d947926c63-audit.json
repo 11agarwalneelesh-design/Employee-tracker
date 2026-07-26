@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "c:\\employee-tracker\\tracker-backend\\logs\\.3f4e042510e090af17e121c9297e71d947926c63-audit.json",
+    "files": [
+        {
+            "date": 1784052533315,
+            "name": "c:\\employee-tracker\\tracker-backend\\logs\\activity-2026-07-14.log",
+            "hash": "cd9e1728aafbfd449baebbf3dd98b32f3be8115323033cefa92792eddf31079f"
+        }
+    ],
+    "hashType": "sha256"
+}

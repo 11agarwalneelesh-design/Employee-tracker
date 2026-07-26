@@ -1,0 +1,65 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\employee-tracker\\tracker-backend\\logs\\.75ea845644e0445945720f0fd44c43463c57fb64-audit.json",
+    "files": [
+        {
+            "date": 1783966205792,
+            "name": "C:\\employee-tracker\\tracker-backend\\logs\\activity-2026-07-13.log",
+            "hash": "61c580e3507f6b66788c1379149fabc62f09b19c18572a467d44f8f740450fc9"
+        },
+        {
+            "date": 1783967429084,
+            "name": "C:\\employee-tracker\\tracker-backend\\logs\\activity-2026-07-14.log",
+            "hash": "66eb1eb6df77a108c7f71508cddcb366968b95db0ae6b6ae3bed702b755c96af"
+        },
+        {
+            "date": 1784054168323,
+            "name": "C:\\employee-tracker\\tracker-backend\\logs\\activity-2026-07-15.log",
+            "hash": "8c148ac301ae299191d62ea70db7f77a06946e21f91ed526f2666314a6e3a947"
+        },
+        {
+            "date": 1784211680393,
+            "name": "C:\\employee-tracker\\tracker-backend\\logs\\activity-2026-07-16.log",
+            "hash": "ac50bd82d24f4eb8cc002914d4e7fad6d096565c83c00d54cec84890ae43e229"
+        },
+        {
+            "date": 1784263899324,
+            "name": "C:\\employee-tracker\\tracker-backend\\logs\\activity-2026-07-17.log",
+            "hash": "f38ba2808b756f57c857ab72164b34ad03a59ca4eb152933d270fddc7eb16635"
+        },
+        {
+            "date": 1784475700265,
+            "name": "C:\\employee-tracker\\tracker-backend\\logs\\activity-2026-07-19.log",
+            "hash": "6cd3e90c7dc1270ce8f8d8db13d073ee2f938344794a115c845fa2ca56aca3bd"
+        },
+        {
+            "date": 1784525329467,
+            "name": "C:\\employee-tracker\\tracker-backend\\logs\\activity-2026-07-20.log",
+            "hash": "0924d36c8b8d055c9929806946135a14be0794a116b2d942e463ddd32abb003e"
+        },
+        {
+            "date": 1784637759125,
+            "name": "C:\\employee-tracker\\tracker-backend\\logs\\activity-2026-07-21.log",
+            "hash": "426d65d094903156533e5f3a9d03ab1084d84e61c0cb04a6d0a21d296c80dc25"
+        },
+        {
+            "date": 1784659793215,
+            "name": "C:\\employee-tracker\\tracker-backend\\logs\\activity-2026-07-22.log",
+            "hash": "fdecee32973ad710367eae7d84675435253efcf9ca1da927f5de47b528b61a82"
+        },
+        {
+            "date": 1784910230185,
+            "name": "C:\\employee-tracker\\tracker-backend\\logs\\activity-2026-07-24.log",
+            "hash": "3d14460a207cdfbe4323afe5e79e85ac87c7d07316026375af0307c1433bdc89"
+        },
+        {
+            "date": 1785068187779,
+            "name": "C:\\employee-tracker\\tracker-backend\\logs\\activity-2026-07-26.log",
+            "hash": "8699b7c0ae095b4ea23aa1744f2491d405c78dc08347fc8cb183983617aefa13"
+        }
+    ],
+    "hashType": "sha256"
+}

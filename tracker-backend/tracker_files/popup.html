@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 220px; font-family: sans-serif; padding: 10px; background-color: #0f172a; color: #f1f5f9; }
+    h3 { font-size: 14px; margin: 0 0 8px 0; color: #38bdf8; }
+    input { width: 90%; padding: 6px; margin-bottom: 8px; border: 1px border #334155; border-radius: 4px; background: #1e293b; color: white; font-size: 12px; }
+    button { width: 97%; padding: 6px; background-color: #0ea5e9; border: none; color: white; border-radius: 4px; cursor: pointer; font-weight: bold; }
+    button:hover { background-color: #0284c7; }
+    .status { font-size: 11px; margin-top: 6px; color: #94a3b8; font-family: monospace; }
+  </style>
+</head>
+<body>
+  <h3>Worker Profile Config</h3>
+  <input type="email" id="emailInput" placeholder="Enter your work email">
+  <button id="saveBtn">Save Profile</button>
+  <div class="status" id="profileStatus">Checking active ID...</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
